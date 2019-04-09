@@ -119,8 +119,7 @@ int main( void )
 	// Load the texture
 	//GLuint Texture = loadtextures("L200-OBJ/truck_color.jpg");
 	GLuint Texture = loadtextures("L200-OBJ-triangles/truck_color.jpg");
-	//GLuint Texture = loadtextures("ywing/truck_.jpg");
-	
+		
 	
 	// Get a handle for our "myTextureSampler" uniform
 	GLuint TextureID  = glGetUniformLocation(programID, "myTextureSampler");
@@ -129,8 +128,8 @@ int main( void )
 	std::vector<glm::vec3> vertices;
 	std::vector<glm::vec2> uvs;
 	std::vector<glm::vec3> normals; // Won't be used at the moment.
-	//bool res = loadOBJ("L200-OBJ-triangles/truck.obj", vertices, uvs, normals);
-	bool res = loadOBJ("ywing/y-wing.obj", vertices, uvs, normals);
+	bool res = loadOBJ("L200-OBJ-triangles/truck.obj", vertices, uvs, normals);
+
 
 	// Load it into a VBO
 
